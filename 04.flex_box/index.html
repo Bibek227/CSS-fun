@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Flex box demo</h1>
+    <div class="container">
+        <h2>1.Default flex:row</h2>
+        <div class="flex-container">
+            <div class="square p-1">1</div>
+            <div class="square p-2">2</div>
+            <div class="square p-3">3</div>
+            <div class="square p-4">4</div>
+            <div class="square p-5">5</div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>2.Default flex:column</h2>
+        <div class="flex-container" style="
+        flex-direction: column;
+        /* flex-direction: column-reverse; */
+        ">
+            <div class="square p-1">1</div>
+            <div class="square p-2">2</div>
+            <div class="square p-3">3</div>
+            <div class="square p-4">4</div>
+            <div class="square p-5">5</div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>3.Justify content: space around</h2>
+        <div class="flex-container" style="
+        justify-content: space-around;
+        ">
+            <div class="square p-1">1</div>
+            <div class="square p-2">2</div>
+            <div class="square p-3">3</div>
+            <div class="square p-4">4</div>
+            <div class="square p-5">5</div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>4.Align items: center</h2>
+        <div class="flex-container" style="
+        align-items:flex-end;
+        ">
+            <div class="square p-1">1</div>
+            <div class="square p-2">2</div>
+            <div class="square p-3">3</div>
+            <div class="square p-4">4</div>
+            <div class="square p-5">5</div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>5.flex-wrap:wrap</h2>
+        <div class="flex-container" style="
+        flex-wrap: wrap;
+        height: auto;
+        ">
+            <div class="square p-1">1</div>
+            <div class="square p-2">2</div>
+            <div class="square p-3">3</div>
+            <div class="square p-4">4</div>
+            <div class="square p-5">6</div>
+            <div class="square p-1">7</div>
+            <div class="square p-2">8</div>
+            <div class="square p-3">9</div>
+            <div class="square p-4">10</div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>6.Align content: space-around (with wrap)</h2>
+        <div class="flex-container" style=" 
+        flex-wrap: wrap;
+        align-content: space-around;
+        ">
+            <div class="square p-1">1</div>
+            <div class="square p-2">2</div>
+            <div class="square p-3">3</div>
+            <div class="square p-4">4</div>
+            <div class="square p-5">5</div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>7.flex grow</h2>
+        <div class="flex-container">
+            <div class="square p-1"style="flex-grow:1">1</div>
+            <div class="square p-2"style="flex-grow:2">2</div>
+            <div class="square p-3"style="flex-grow:3">3</div>
+            <div class="square p-4"style="flex-grow:4">4</div>
+            <div class="square p-5"style="flex-grow:5">5</div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>8.align self</h2>
+        <div class="flex-container">
+            <div class="square p-1"style="align-self:center">1</div>
+            <div class="square p-2"style="align-self:flex-end">2</div>
+            <div class="square p-3"style="align-self:stretch; height:auto">3</div>
+            <div class="square p-4"style="align-self:flex-start">4</div>
+            <div class="square p-5"style="align-self:">5</div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>9.order property</h2>
+        <div class="flex-container">
+            <div class="square p-1"style="order:1 ">1</div>
+            <div class="square p-2"style="order:3">2</div>
+            <div class="square p-3"style="order:2 ">3</div>
+            <div class="square p-4"style="order:5 ">4</div>
+            <div class="square p-5"style="order:4 ">5</div>
+        </div>
+    </div>
+</body>
+</html>
